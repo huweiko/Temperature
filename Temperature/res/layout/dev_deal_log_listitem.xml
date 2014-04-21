@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+    <include android:id="@+id/bd_show_detail_log"
+        layout="@layout/dev_abnormal_log_listitem"
+        />
+	<LinearLayout
+	    android:id="@+id/bd_show_deal_log"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:descendantFocusability="blocksDescendants" 
+	    android:paddingLeft="6dip"
+	    android:paddingRight="6dip"
+	    android:paddingTop="8dip"
+	    android:paddingBottom="7dip"
+	    android:orientation="horizontal" >
+	    
+	    <ImageView
+	        android:id="@+id/listitem_deal_imageview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+	    
+	    <LinearLayout 
+	        android:orientation="vertical" 
+	        android:layout_width="fill_parent"  
+	        android:layout_height="wrap_content">
+	        
+	        <LinearLayout 
+	        android:orientation="horizontal" 
+	        android:layout_width="fill_parent"  
+	        android:layout_height="wrap_content">
+	        
+	            <TextView
+	    		android:layout_width="wrap_content" 
+	           	android:layout_height="wrap_content" 
+	           	android:layout_marginLeft="10dip"
+	           	android:textSize="@dimen/text_size_10"
+	            android:textColor="@color/white"
+	            android:text="@string/dev_detail_log_description_tittle"/>
+	            
+	            <TextView
+	            android:id="@+id/device_deallog_description"  
+	    		android:layout_width="wrap_content" 
+	           	android:layout_height="wrap_content" 
+	           	android:layout_marginLeft="10dip"
+	           	android:textSize="@dimen/text_size_10"
+	            android:textColor="@color/white"/>
+	        
+	       	</LinearLayout>
+	       	
+	       	<LinearLayout 
+	        android:orientation="horizontal" 
+	        android:layout_width="fill_parent"  
+	        android:layout_height="wrap_content">
+	        
+	            <TextView
+	    		android:layout_width="wrap_content" 
+	           	android:layout_height="wrap_content" 
+	           	android:layout_marginLeft="10dip"
+	           	android:textSize="@dimen/text_size_10"
+	            android:textColor="@color/white"
+	            android:text="@string/dev_detail_log_starthandler_tittle"/>
+	            
+	            <TextView
+	            android:id="@+id/device_deallog_startuser"  
+	    		android:layout_width="wrap_content" 
+	           	android:layout_height="wrap_content" 
+	           	android:layout_marginLeft="10dip"
+	           	android:textSize="@dimen/text_size_10"
+	            android:textColor="@color/white"/>
+	        
+	       	</LinearLayout>
+	        <LinearLayout 
+	        android:orientation="horizontal" 
+	        android:layout_width="fill_parent"  
+	        android:layout_height="wrap_content">
+	        
+	            <TextView
+	    		android:layout_width="wrap_content" 
+	           	android:layout_height="wrap_content" 
+	           	android:layout_marginLeft="10dip"
+	           	android:textSize="@dimen/text_size_10"
+	            android:textColor="@color/white"
+	            android:text="@string/dev_detail_log_starttime_tittle"/>
+	            
+	            <TextView
+	            android:id="@+id/device_deallog_starttime"  
+	    		android:layout_width="wrap_content" 
+	           	android:layout_height="wrap_content" 
+	           	android:layout_marginLeft="10dip"
+	           	android:textSize="@dimen/text_size_10"
+	            android:textColor="@color/white"/>
+	        
+	       	</LinearLayout>
+	       	<LinearLayout 
+	        android:orientation="horizontal" 
+	        android:layout_width="fill_parent"  
+	        android:layout_height="wrap_content">
+	        
+	            <TextView
+	    		android:layout_width="wrap_content" 
+	           	android:layout_height="wrap_content" 
+	           	android:layout_marginLeft="10dip"
+	           	android:textSize="@dimen/text_size_10"
+	            android:textColor="@color/white"
+	            android:text="@string/dev_detail_log_startDesStatus_tittle"/>
+	            
+	            <TextView
+	            android:id="@+id/device_deallog_startdes"  
+	    		android:layout_width="wrap_content" 
+	           	android:layout_height="wrap_content" 
+	           	android:layout_marginLeft="10dip"
+	           	android:textSize="@dimen/text_size_10"
+	            android:textColor="@color/white"/>
+	        
+	       	</LinearLayout>  
+	       	<LinearLayout 
+	        android:orientation="horizontal" 
+	        android:layout_width="fill_parent"  
+	        android:layout_height="wrap_content">
+	        
+	            <TextView
+	    		android:layout_width="wrap_content" 
+	           	android:layout_height="wrap_content" 
+	           	android:layout_marginLeft="10dip"
+	           	android:textSize="@dimen/text_size_10"
+	            android:textColor="@color/white"
+	            android:text="@string/dev_detail_log_endhandler_tittle"/>
+	            
+	            <TextView
+	            android:id="@+id/device_deallog_enduser"  
+	    		android:layout_width="wrap_content" 
+	           	android:layout_height="wrap_content" 
+	           	android:layout_marginLeft="10dip"
+	           	android:textSize="@dimen/text_size_10"
+	            android:textColor="@color/white"/>
+	        
+	       	</LinearLayout> 
+	       	<LinearLayout 
+	        android:orientation="horizontal" 
+	        android:layout_width="fill_parent"  
+	        android:layout_height="wrap_content">
+	        
+	            <TextView
+	    		android:layout_width="wrap_content" 
+	           	android:layout_height="wrap_content" 
+	           	android:layout_marginLeft="10dip"
+	           	android:textSize="@dimen/text_size_10"
+	            android:textColor="@color/white"
+	            android:text="@string/dev_detail_log_endtime_tittle"/>
+	            
+	            <TextView
+	            android:id="@+id/device_deallog_endtime"  
+	    		android:layout_width="wrap_content" 
+	           	android:layout_height="wrap_content" 
+	           	android:layout_marginLeft="10dip"
+	           	android:textSize="@dimen/text_size_10"
+	            android:textColor="@color/white"/>
+	        
+	       	</LinearLayout>
+	       	<LinearLayout 
+	        android:orientation="horizontal" 
+	        android:layout_width="fill_parent"  
+	        android:layout_height="wrap_content">
+	        
+	            <TextView
+	    		android:layout_width="wrap_content" 
+	           	android:layout_height="wrap_content" 
+	           	android:layout_marginLeft="10dip"
+	           	android:textSize="@dimen/text_size_10"
+	            android:textColor="@color/white"
+	            android:text="@string/dev_detail_log_endDesStatus_tittle"/>
+	            
+	            <TextView
+	            android:id="@+id/device_deallog_enddes"  
+	    		android:layout_width="wrap_content" 
+	           	android:layout_height="wrap_content" 
+	           	android:layout_marginLeft="10dip"
+	           	android:textSize="@dimen/text_size_10"
+	            android:textColor="@color/white"/>
+	        
+	       	</LinearLayout>       	     	      	
+	    </LinearLayout>
+	  </LinearLayout>  
+
+</LinearLayout>

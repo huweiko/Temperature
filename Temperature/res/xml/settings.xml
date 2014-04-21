@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<PreferenceScreen   
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    >  
+  	
+    <PreferenceCategory android:title="@string/system_title">  
+        <CheckBoxPreference
+            android:summary="@string/Whether_to_start_automatically"  
+            android:title="@string/Run_on_startup"  
+            android:defaultValue="false"  
+            android:key="@string/settings_run_on_startup" />
+        <CheckBoxPreference 
+            android:summary="@string/Whether_to_run_in_the_background" 
+            android:title="@string/Run_in_background" 
+            android:key="@string/settings_run_in_background" 
+            android:defaultValue="false"/>  
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/surveil_title">
+        <ListPreference 
+            android:key="@string/settings_refresh_frequency" 
+            android:summary="@string/Refresh_devices_status" 
+            android:title="@string/Refresh_frequency" 
+            android:dialogTitle="@string/Refresh_frequency_Dialog_title" 
+            android:entries="@array/refresh_sort_options" 
+            android:entryValues="@array/refresh_sort_options_values" 
+            android:defaultValue="0"/>
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/notifications_title">
+        <CheckBoxPreference 
+            android:summary="@string/Whether_to_receive_notification" 
+            android:title="@string/Notifications" 
+            android:key="@string/settings_notification"/>
+        <ListPreference 
+            android:key="@string/settings_check_frequency" 
+            android:summary="@string/Check_server_notification" 
+            android:title="@string/Check_frequency" 
+            android:entries="@array/check_frequency_sort_options" 
+            android:dialogTitle="@string/Check_frequency_Dialog_title" 
+            android:entryValues="@array/check_frequency_sort_options_values" 
+            android:defaultValue="0"/> 
+         
+    </PreferenceCategory>
+     <PreferenceScreen
+        android:key="@string/settings_QRcode"
+        android:title="@string/QR_code_title"
+        android:summary="@string/QR_code_instruction" >
+        <intent
+            android:targetPackage="com.refeved.monitor"
+            android:targetClass="com.refeved.monitor.ui.CaptureActivity" />
+    </PreferenceScreen>
+    
+</PreferenceScreen> 

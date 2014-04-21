@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:colorBackgroundCacheHint="@color/background_color"
+ 
+    android:descendantFocusability="blocksDescendants" 
+    android:paddingLeft="6dip"
+    android:paddingRight="6dip"
+    android:paddingTop="8dip"
+    android:paddingBottom="7dip"
+    android:orientation="horizontal"
+     >
+    
+    <ImageView
+        android:id="@+id/listitem_abnormal_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <LinearLayout 
+        android:orientation="vertical" 
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content">
+        
+        <LinearLayout 
+        android:orientation="horizontal" 
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content">
+        
+            <TextView
+    		android:layout_width="wrap_content" 
+           	android:layout_height="wrap_content" 
+           	android:layout_marginLeft="10dip"
+           	android:textSize="@dimen/text_size_10"
+            android:textColor="@color/white"
+            android:text="@string/dev_detail_log_description_tittle"/>
+            
+            <TextView
+            android:id="@+id/device_abnormallog_description"  
+    		android:layout_width="wrap_content" 
+           	android:layout_height="wrap_content" 
+           	android:layout_marginLeft="10dip"
+           	android:textSize="@dimen/text_size_10"
+            android:textColor="@color/white"/>
+        
+       	</LinearLayout>
+       	
+        <LinearLayout 
+        android:orientation="horizontal" 
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content">
+        
+            <TextView
+    		android:layout_width="wrap_content" 
+           	android:layout_height="wrap_content" 
+           	android:layout_marginLeft="10dip"
+           	android:textSize="@dimen/text_size_10"
+            android:textColor="@color/white"
+            android:text="@string/dev_detail_log_starttime_tittle"/>
+            
+            <TextView
+            android:id="@+id/device_abnormallog_starttime"  
+    		android:layout_width="wrap_content" 
+           	android:layout_height="wrap_content" 
+           	android:layout_marginLeft="10dip"
+           	android:textSize="@dimen/text_size_10"
+            android:textColor="@color/white"/>
+        
+       	</LinearLayout>
+       	
+       	<LinearLayout 
+        android:orientation="horizontal" 
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content">
+        
+            <TextView
+    		android:layout_width="wrap_content" 
+           	android:layout_height="wrap_content" 
+           	android:layout_marginLeft="10dip"
+           	android:textSize="@dimen/text_size_10"
+            android:textColor="@color/white"
+            android:text="@string/dev_detail_log_endtime_tittle"/>
+            
+            <TextView
+            android:id="@+id/device_abnormallog_endtime"  
+    		android:layout_width="wrap_content" 
+           	android:layout_height="wrap_content" 
+           	android:layout_marginLeft="10dip"
+           	android:textSize="@dimen/text_size_10"
+            android:textColor="@color/white"/>
+        
+       	</LinearLayout>
+       	
+       	<LinearLayout 
+        android:orientation="horizontal" 
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content">
+        
+            <TextView
+    		android:layout_width="wrap_content" 
+           	android:layout_height="wrap_content" 
+           	android:layout_marginLeft="10dip"
+           	android:textSize="@dimen/text_size_10"
+            android:textColor="@color/white"
+            android:text="@string/device_info_status_tittile"/>
+            
+            <TextView
+            android:id="@+id/device_abnormallog_status"  
+    		android:layout_width="wrap_content" 
+           	android:layout_height="wrap_content" 
+           	android:layout_marginLeft="10dip"
+           	android:textSize="@dimen/text_size_10"
+            android:textColor="@color/white"/>
+        
+       	</LinearLayout>
+       	
+    </LinearLayout>
+    
+
+</LinearLayout>

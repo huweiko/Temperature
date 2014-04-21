@@ -1,0 +1,3 @@
+ActionBarSherlock 是Android compatibility library 的一个扩展, 不知道什么原因 Android 兼容开发包没有包含ActionBar. 所以就有了ActionBarSherlock . 其使用方式和 兼容开发包类似.
+
+ActionBarSherlock 被设计成通过一个API就能够很方便使用所有版本的Android操作栏的设计模式。

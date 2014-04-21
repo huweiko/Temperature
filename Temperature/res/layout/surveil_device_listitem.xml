@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/listitem_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/device_info_icon" />
+
+    <TextView
+        android:id="@+id/device_info_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@id/listitem_imageview"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_10" />
+
+    <TextView
+        android:id="@+id/device_info_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/device_info_id"
+        android:layout_toRightOf="@id/listitem_imageview"
+        android:layout_marginLeft="10dip"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_10" />
+
+    <TextView
+        android:id="@+id/device_info_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/device_info_status"
+        android:layout_toRightOf="@id/listitem_imageview"
+        android:layout_marginLeft="10dip"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_10" />
+
+    <TextView
+        android:id="@+id/device_info_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dip"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_20" />
+
+    <TextView
+        android:id="@+id/device_info_low_high"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/device_info_num"
+        android:layout_marginLeft="10dip"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_10" />
+
+</RelativeLayout>

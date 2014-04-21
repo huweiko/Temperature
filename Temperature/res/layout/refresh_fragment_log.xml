@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color">
+    <com.refeved.monitor.view.component.pull2refresh.VerticalPullToRefreshLayout 
+        android:id="@+id/infomation_tab_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/app_divider_h_gray">
+        <ListView 
+            android:id="@+id/list_exception_log"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </com.refeved.monitor.view.component.pull2refresh.VerticalPullToRefreshLayout>
+    
+    <ProgressBar
+            android:id="@+id/menu_refresh_loading"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            style="?android:attr/progressBarStyleSmall" />
+        
+        <TextView 
+            android:id="@+id/init_tv"
+            style="@style/f_w"
+            android:textColor="@color/gray"
+            android:text="正在初始化，请稍后..."
+            android:gravity="center"
+            android:layout_gravity="center_horizontal|top"
+            android:paddingTop="20dp"
+            android:visibility="visible"/>
+</LinearLayout>

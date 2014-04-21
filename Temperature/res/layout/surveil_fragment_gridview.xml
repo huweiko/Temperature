@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <com.refeved.monitor.view.OptimizeGridView
+        android:id="@+id/grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/listview_item_tag"
+        android:layout_marginBottom="@dimen/gridMarginBottomRight"
+        android:layout_marginLeft="@dimen/gridMarginTopLeft"
+        android:layout_marginRight="@dimen/gridMarginBottomRight"
+        android:layout_marginTop="@dimen/gridMarginTopLeft"
+        android:columnWidth="@dimen/itemSize"
+        android:gravity="center"
+        android:horizontalSpacing="0dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="auto_fit"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0dp"/>
+ 	
+    <RelativeLayout 
+     	android:id="@+id/SurveilListOnClick"
+        android:gravity="center" 
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"
+        android:visibility="gone">
+
+    	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/empty_onclick"
+        android:textSize="20sp"
+        android:textColor="@color/transparent_white" />  
+ 	</RelativeLayout>
+    
+</RelativeLayout>

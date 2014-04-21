@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">  
+    <PreferenceCategory android:title="@string/server_title">
+        <EditTextPreference
+        android:dialogTitle="@string/external_server_IP_Dialog_title"   
+	    android:key="@string/settings_external_server_IP"   
+	    android:summary="@string/external_server_IP_summary"   
+	    android:title="@string/external_server_IP_title"
+	    android:defaultValue="58.64.200.105"/>  
+	    <EditTextPreference
+        android:dialogTitle="@string/inward_server_IP_Dialog_title"   
+	    android:key="@string/settings_inward_server_IP"   
+	    android:summary="@string/inward_server_IP_summary"   
+	    android:title="@string/inward_server_IP_title"
+	    android:defaultValue="172.16.99.206"/>
+    </PreferenceCategory>
+</PreferenceScreen> 

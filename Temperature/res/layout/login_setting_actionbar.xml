@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/login_setting_actionbar_relativelayout" 
+  	android:layout_width="fill_parent" 
+  	android:layout_height="40dip" >
+  
+        <Button
+    	android:id="@+id/login_setting_back"
+  		android:layout_width="wrap_content"
+		android:layout_height="35dp"
+		android:layout_centerVertical="true"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="5.0dip"
+		android:background="@drawable/color_button"
+		android:text="@string/back_button"
+		android:textColor="@color/white"
+		android:textSize="15dp"
+		/>
+        
+        <Button
+    	android:id="@+id/login_setting_finish"
+  		android:layout_width="wrap_content"
+		android:layout_height="35dp"
+		android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="5.0dip"
+		android:background="@drawable/color_button"
+		android:text="@string/finish_button"
+		android:textColor="@color/white"
+		android:textSize="15dp"
+		/>
+   	
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/login_actionbar_relativelayout" 
+  	android:layout_width="fill_parent" 
+  	android:layout_height="40dip" >
+  
+        <Button
+    	android:id="@+id/login_setting_button"
+  		android:layout_width="wrap_content"
+		android:layout_height="35dp"
+		android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="5.0dip"
+		android:text="@string/menu_settings"
+		android:textColor="@color/white"
+		android:textSize="15dp"
+		/>
+   	
+</RelativeLayout>

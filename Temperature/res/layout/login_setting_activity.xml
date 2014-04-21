@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<LinearLayout 
+	   android:layout_width="match_parent"
+	   android:layout_height="wrap_content"
+	   android:orientation="horizontal" 
+	   android:ems="10"  >
+
+		<TextView
+		    android:id="@+id/external_ip_textview"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/external_server_IP_title" />
+
+	       <EditText
+	        android:id="@+id/external_ip_editview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        >
+	         <requestFocus />  
+	       </EditText>
+	        
+	</LinearLayout>
+	
+	<LinearLayout 
+	   android:layout_width="match_parent"
+	   android:layout_height="wrap_content"
+	   android:orientation="horizontal"
+	   android:ems="10">
+
+		<TextView
+		    android:id="@+id/inward_ip_textview"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/inward_server_IP_title" />
+
+	   <EditText
+	      android:id="@+id/inward_ip_editview"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:ems="10"
+	      >
+	
+	      <requestFocus />
+	   </EditText> 
+	    
+	</LinearLayout>
+
+
+
+</LinearLayout>

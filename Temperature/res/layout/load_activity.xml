@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/wk01"
+    android:orientation="vertical">
+    <LinearLayout 
+        android:orientation="vertical" 
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"
+        android:layout_weight="3">
+    </LinearLayout>
+
+    <RelativeLayout 
+      	android:layout_width="fill_parent"  
+      	android:layout_height="wrap_content"
+      	android:layout_weight="3">
+   		<ImageView
+      	android:id="@+id/imageView1"
+      	android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:layout_centerHorizontal="true"
+ 		android:layout_centerVertical="true"
+      	android:src="@drawable/wk02"/> 
+ 
+    	<ImageView
+   	    android:id="@+id/imageViewWK05"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_below="@+id/imageView1"
+		android:layout_marginTop="20dp"
+   	    android:layout_centerHorizontal="true"
+   	    android:src="@drawable/wk05"
+   	    android:textColor="@color/transparent_white" />
+
+	</RelativeLayout>
+
+ 	<RelativeLayout 
+        android:orientation="vertical" 
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"
+        android:layout_weight="3">
+ 	    
+ 	    <ProgressBar
+        android:id="@+id/load_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" 
+        android:layout_centerVertical="true"/>
+
+    	<TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/load_progressBar"
+        android:layout_centerHorizontal="true"
+        android:text="@string/loading"
+        android:textColor="@color/transparent_white" />  
+ 	</RelativeLayout>
+ 	
+ 	<LinearLayout
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="40dp">
+    	<TextView
+        android:id="@+id/textViewV"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+		android:gravity="center"
+        android:text="国家基因库 V1.0"
+        android:textColor="@color/transparent_white" />
+    </LinearLayout>
+</LinearLayout>

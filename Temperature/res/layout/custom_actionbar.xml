@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_relativelayout_header"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip" >
+
+    <ImageButton
+        android:id="@+id/main_head_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginLeft="5.0dip"
+        android:background="@drawable/actionbar_home_button"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/main_head_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5.0dip"
+        android:background="@drawable/menu_back"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/main_head_title"
+        style="@style/main_head_title"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5.0dip"
+        android:layout_toRightOf="@id/main_head_home"
+        android:text="@string/header_tittle_surveil"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/main_head_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5.0dip"
+        android:background="@drawable/actionbar_refresh_button" />
+
+    <ImageButton
+        android:id="@+id/main_head_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5.0dip"
+        android:layout_toLeftOf="@id/main_head_refresh"
+        android:background="@drawable/actionbar_location_button" />
+
+    <ImageButton
+        android:id="@+id/main_head_log_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5.0dip"
+        android:background="@drawable/actionbar_refresh_button"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/main_head_log_switch"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/color_button"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/main_head_textview_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5.0dip"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/main_head_progressBar_refresh"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+	<ImageButton
+        android:id="@+id/main_version_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5.0dip"
+        android:visibility="invisible"
+        android:background="@drawable/information_vresion" />
+</RelativeLayout>

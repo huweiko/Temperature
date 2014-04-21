@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/wk01"
+    android:padding="10dp"
+    android:shrinkColumns="0"
+    android:stretchColumns="1" >
+
+    <!--  -->
+
+    <TextView
+        android:id="@+id/tv_download"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:text="TextView" 
+        android:layout_weight="1"/>
+
+ 
+
+    <Button
+        android:id="@+id/btn_download"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:text="Button"
+        android:layout_weight="1" />
+
+<!--         android:id="@+id/pb_download"
+        style="@style/myProgressBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="38dp"
+        android:max="100"
+        android:progress="30"
+        android:layout_weight="1"  -->
+
+    <ProgressBar
+        android:id="@+id/pb_download"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_weight="1"/>
+
+</TableLayout>

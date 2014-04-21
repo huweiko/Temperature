@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Linear_activityMain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:theme="@style/Theme.Sherlock.Light" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            tools:context=".MainActivity" >
+        </android.support.v4.view.ViewPager>
+        <LinearLayout
+            android:id="@+id/notnetworking"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@color/yellow"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/mobile_unverify_icon"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10dp"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="网络连接不可用，请检查网络设置。"
+                android:layout_gravity="center"
+                android:textSize="16sp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/net_webwechat_go"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="10dp"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/RelativeMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/actionbar_gradient_bg"
+        android:theme="@style/perference_set_activity" >
+
+        <ImageButton
+            android:id="@+id/menuSurveril"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:src="@drawable/menu_surveil_on" />
+
+        <ImageButton
+            android:id="@+id/menuLog"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:src="@drawable/menu_log" />
+
+        <ImageButton
+            android:id="@+id/menuSetting"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:src="@drawable/menu_settings" />
+    </LinearLayout>
+
+</LinearLayout>

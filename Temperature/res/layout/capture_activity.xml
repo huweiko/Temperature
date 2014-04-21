@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copyright (C) 2008 ZXing authors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+
+  	<SurfaceView android:id="@+id/preview_view"
+  	     android:layout_weight="1"
+               android:layout_width="fill_parent"
+               android:layout_gravity="center"
+               android:layout_height="fill_parent"
+               />
+
+ 	<com.refeved.monitor.view.ViewfinderView
+      android:id="@+id/viewfinder_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@color/transparent"/>
+    <LinearLayout
+        android:id="@+id/capture_title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" 
+	    android:layout_weight="1">
+	        <RelativeLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/mmtitle_bg_alpha"
+		    android:orientation="horizontal" >
+		    <Button
+		        android:id="@+id/button_back"
+		        android:layout_width="75.0dip"
+		        android:text="@string/back_button"
+		        android:background="@drawable/mm_title_back_btn"
+		        android:textColor="@android:color/white"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="2dip" />
+		
+		    <TextView
+		        android:id="@+id/textview_title"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignBaseline="@+id/button_back"
+		        android:layout_alignBottom="@+id/button_back"
+		        android:layout_centerHorizontal="true"
+		        android:gravity="center_vertical"
+		        android:textColor="@android:color/white"
+		        android:textSize="18sp" />
+			</RelativeLayout>  
+			<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+		    <EditText
+		     	android:id="@+id/EditText_device_info"
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="5"
+		        android:hint="@string/device_info_hint"
+		        android:background="@drawable/trans_black_button"
+		        android:textColor="@android:color/white"
+		        android:textSize="18sp">
+		    </EditText>
+		    <TextView
+		        android:id="@+id/device_info_count"
+		        android:layout_weight="1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:background="@drawable/mmtitle_bg_alpha"
+		        android:text="001"
+		        android:gravity="center"
+		        android:textColor="@android:color/white"
+		        android:textSize="18sp" />
+		
+			</LinearLayout>   
+			<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+		    	<EditText
+		        android:id="@+id/EditText_device_lower_limit"
+		        android:layout_weight="1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:hint="@string/device_info_hint_lower_limit"
+		        android:background="@drawable/trans_black_button"
+		        android:textColor="@android:color/white"
+		        android:text="-500"
+		        android:textSize="18sp" />
+		    <EditText
+		     	android:id="@+id/EditText_device_upper_limit"
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1"
+		        android:hint="@string/device_info_hint_upper_limit"
+		        android:background="@drawable/trans_black_button"
+		        android:textColor="@android:color/white"
+		        android:text="500"
+		        android:textSize="18sp">
+		    </EditText>
+			</LinearLayout>
+			<LinearLayout  
+			android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+			    <TextView 
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1"
+			        android:background="@drawable/mmtitle_bg_alpha"
+		        	android:gravity="center"
+		        	android:textColor="@android:color/white"
+		        	android:textSize="18sp"
+			        android:text="未入库设备数:"/>
+			    <TextView
+			        android:id="@+id/TextView_device_num"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1"
+			        android:background="@drawable/mmtitle_bg_alpha"
+		        	android:gravity="center"
+		        	android:textColor="@android:color/white"
+		        	android:textSize="18sp"/>
+			</LinearLayout>  
+        </LinearLayout>
+	    
+		
+		<LinearLayout
+			android:id="@+id/LinearLayout_bottom_button"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:padding="5dp">
+			<Button
+			android:id="@+id/capture_change_room_button"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@drawable/trans_black_button"
+			android:text="@string/device_change_room_button"
+			android:textColor="@color/white"
+			android:textSize="20sp"/>  	
+			<Button
+			android:id="@+id/capture_put_storage_button"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@drawable/trans_black_button"
+			android:text="@string/device_next_button"
+			android:textColor="@color/white"
+			android:textSize="20sp"/>  	  
+			  
+		</LinearLayout>   
+    </LinearLayout>
+  	
+
+    <include
+     android:id="@+id/include1"
+     android:background="@color/transparent"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:visibility="gone"
+     layout="@layout/activity_title" />
+
+</FrameLayout>
